@@ -1,7 +1,7 @@
 ---
 name: prime-cli
 description: >
-  Use when the user mentions: GPU, pods, compute, sandboxes, ML environments, evaluations,
+  Use when the user works with Prime Intellect packages (prime-rl, prime, verifiers, etc.) and mentions: GPU, pods, compute, sandboxes, ML environments, evaluations,
   evals, RL training, reinforcement learning, inference, Docker images, tunneling, disks,
   secrets, Prime Intellect, prime CLI, deploy model, rent GPU, SSH pod, sandbox SDK,
   verifiers, GEPA, OpenEnv, code execution, persistent storage, team management.
