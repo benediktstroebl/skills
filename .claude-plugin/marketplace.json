@@ -1,4 +1,5 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "skills",
   "version": "0.1.0",
   "description": "A shared collection of reusable Claude Code skills",
@@ -9,13 +10,13 @@
     {
       "name": "example-skill",
       "description": "A template skill to copy when creating new skills",
-      "source": "skills/example-skill",
+      "source": "./skills/example-skill",
       "category": "development"
     },
     {
       "name": "prime-cli",
       "description": "Skill for Prime Intellect CLI — GPU pods, compute, sandboxes, ML environments, and more",
-      "source": "skills/prime-cli",
+      "source": "./skills/prime-cli",
       "category": "development"
     }
   ]
