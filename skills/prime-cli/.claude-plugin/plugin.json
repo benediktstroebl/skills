@@ -1,5 +1,5 @@
 {
   "name": "prime-cli",
   "version": "0.1.0",
-  "description": "Skill for Prime Intellect CLI — GPU pods, compute, sandboxes, ML environments, and more"
+  "description": "Skill for Prime Intellect CLI — GPU pods, compute, sandboxes, hosted RL training, evaluations, RL environments, and more"
 }
