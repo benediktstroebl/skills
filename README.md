@@ -1,35 +1,39 @@
 # skills
 
-A shared collection of reusable Claude Code skills, packaged as a Claude Code plugin.
+A shared collection of reusable Claude Code skills, packaged as a Claude Code marketplace.
 
-## Loading the plugin
+## Adding this marketplace
 
-Add this plugin to your Claude Code configuration:
+Use the marketplace source:
 
-```json
-{
-  "plugins": [
-    { "type": "local", "path": "/path/to/this/repo" }
-  ]
-}
+```
+benediktstroebl/skills
 ```
 
-Or point Claude Code at the repo root directly.
+Or as a local path:
+
+```
+./path/to/this/repo
+```
 
 ## Adding a new skill
 
 1. Copy `skills/example-skill/` to `skills/your-skill-name/`
 2. Edit `SKILL.md` — update the frontmatter (`name`, `description`, `version`) and replace the instructions with your own
-3. Add any supporting files your skill needs in the same directory
+3. Add a `.claude-plugin/plugin.json` in your skill directory with `name` and `description`
+4. Register the new skill in `.claude-plugin/marketplace.json` under the `plugins` array
 
 ## Structure
 
 ```
 skills/
 ├── .claude-plugin/
-│   └── plugin.json       # Plugin manifest
+│   ├── marketplace.json          # Marketplace manifest
+│   └── plugin.json               # Root plugin manifest
 ├── skills/
 │   └── example-skill/
-│       └── SKILL.md      # Example skill template
+│       ├── .claude-plugin/
+│       │   └── plugin.json       # Skill plugin manifest
+│       └── SKILL.md              # Skill instructions
 └── README.md
 ```
